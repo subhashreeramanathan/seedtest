@@ -1,5 +1,4 @@
 const { SpecReporter } = require('jasmine-spec-reporter');
-var seleniumAddress = 'http://150.107.121.2:4444/wd/hub';
 var shell = require('shelljs');
 var camelCase = require('pix-diff/lib/camelCase.js');
 
