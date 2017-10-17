@@ -10,7 +10,7 @@
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
     "lib": [
-      "es2016",
+      "es2015",
       "dom"
     ],
     "typeRoots": [
@@ -22,8 +22,5 @@
       "node",
       "jasmine"
     ]
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }
