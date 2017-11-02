@@ -9,11 +9,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 3000",
     "test": "karma start",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "webdriver-update": "webdriver-manager update --versions.chrome 2.32",
-    "e2e": "protractor e2e/protractor.config.js",
-    "postinstall": "npm run webdriver-update",
-    "e2e:test": "concurrently \"npm run start\" \"npm run e2e\""
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
   },
   "keywords": [
     "syncfusion",
@@ -41,7 +37,12 @@
     "@angular/router": "~4.3.6",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.3",
-    "zone.js": "^0.7.4"
+    "zone.js": "^0.7.4",
+    "bootstrap": "^3.3.6",
+    "jquery": "~3.2.1",
+    "jsrender": "~0.9.84",
+    "syncfusion-javascript": "^15.3.29",
+    "ej-angular2": "^15.3.29"
   },
   "devDependencies": {
     "angular2-template-loader": "~0.6.2",
@@ -77,12 +78,7 @@
     "webpack": "~2.6.1",
     "webpack-dev-server": "~2.4.5",
     "webpack-merge": "~4.1.0",
-    "bootstrap": "^3.3.6",
-    "jquery": "~3.2.1",
-    "jsrender": "~0.9.84",
-    "syncfusion-javascript": "^15.3.29",
-    "ej-angular2": "^15.3.29",
-    "@types/ej.web.all": "15.2.4", 
+    "@types/ej.web.all": "^15.3.3",
     "@types/jasmine": "^2.6.0",
     "@types/jquery": "^3.2.12",
     "@types/node": "^6.0.46"
