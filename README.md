@@ -3,6 +3,5 @@
 ## Running Procedure
 
 * npm install
-* gulp start
-* npm run e2e:test
+* npm run e2e
 * gulp mail
