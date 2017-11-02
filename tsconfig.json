@@ -15,7 +15,8 @@
     "types": [
       "jquery",
       "ej.web.all",
-      "node"
+      "node",
+      "jasmine"
     ]
   },
   "exclude": [
