@@ -36,7 +36,7 @@ gulp.task('mail', function (done) {
   return gulp.src('./e2e/chrome-test-report.html')
     .pipe(through2.obj(function (file, enc, callback) {
       var html = file.contents.toString();
-      html = "Hi Everyone,<br><br>Please find the Angular testing report from below. <br>" + html + "<br><br><br>Regards,<br> Web Automation Team";
+      html = "Hi Everyone,<br><br>Please find the Angular(Webpack) e2e testing report from below. <br>" + html + "<br><br><br>Regards,<br> Web Automation Team";
       message.html = html;
       transport.sendMail(message, function (error) {
         if (error) {
