@@ -9,7 +9,11 @@
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 3000",
     "test": "karma start",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "webdriver-update": "webdriver-manager update --versions.chrome 2.32",
+    "e2e": "protractor e2e/protractor.config.js",
+    "postinstall": "npm run webdriver-update",
+    "e2e:test": "concurrently \"npm run start\" \"npm run e2e\""
   },
   "keywords": [
     "syncfusion",
