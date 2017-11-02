@@ -5,17 +5,23 @@ describe('AppComp', () => {
 
   it('Navigate to home', () => {
     browser.get('#/home');
+    browser.sleep(2000);
     expect(browser.getTitle()).toBeDefined();
   });
   it('Compare the home page', () => {
-    browser.compareScreen(element(By.tagName('p')), 'homePage'); 
+    browser.sleep(1000);
+    browser.compareScreen(element(by.tagName('p')), 'homePage'); 
   });
   it('Navigate to grid', () => {
     browser.get('#/grid');
+    browser.sleep(1000);
     expect(browser.getTitle()).toBeDefined();
   });
   it('Compare the grid page', () => {
-    browser.compareScreen(element(By.tagName('ej-grid')), 'gridPage'); 
+    browser.sleep(1000);
+    browser.compareScreen(element(by.tagName('ej-grid')), 'gridPage'); 
   });
  
 });
+
+
