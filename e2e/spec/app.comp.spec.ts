@@ -8,7 +8,6 @@ describe('AppComp', () => {
     expect(browser.getTitle()).toBeDefined();
   });
   it('Compare the home page', () => {
-    browser.get('#/home');
     browser.compareScreen(element(By.tagName('p')), 'homePage'); 
   });
   it('Navigate to grid', () => {
@@ -16,10 +15,7 @@ describe('AppComp', () => {
     expect(browser.getTitle()).toBeDefined();
   });
   it('Compare the grid page', () => {
-    browser.get('#/grid');
     browser.compareScreen(element(By.tagName('ej-grid')), 'gridPage'); 
   });
  
 });
-
-
